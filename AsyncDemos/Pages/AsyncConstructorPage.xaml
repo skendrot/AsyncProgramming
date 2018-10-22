@@ -1,0 +1,21 @@
+﻿<Page x:Class="AsyncDemos.Pages.AsyncConstructorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AsyncDemos.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AsyncConstructorPage">
+
+    <Grid>
+        <StackPanel>
+            <Button x:Name="ContinueWithButton" Click="ContinueWithButton_Click" >
+                ContinueWith
+            </Button>
+            <Button x:Name="LoadingTask" Click="LoadingTask_Click" Margin="0,12">
+                LoadingTask
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

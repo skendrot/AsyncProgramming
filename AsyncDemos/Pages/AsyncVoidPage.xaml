@@ -1,0 +1,39 @@
+﻿<local:BasePage 
+      x:Class="AsyncDemos.Pages.AsyncVoidPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AsyncDemos.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AsyncVoidPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Logged in as:"/>
+                <TextBlock x:Name="UsernameTextBox" Margin="6,0"/>
+            </StackPanel>
+            <StackPanel Margin="12">
+                <TextBlock  Text="Username"/>
+                <TextBox x:Name="UserTextBox" Text="skendrot"/>
+                <TextBlock Text="Password"/>
+                <PasswordBox x:Name="PasswordTextBox" Password="password"/>
+                <Button x:Name="LoginAsyncVoidButton" Click="Button_Click">
+                    login async void
+                </Button>
+                <Button x:Name="LoginAsyncButton" Click="Button_Click_1" Margin="0,12">
+                    login async
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Row="1" >
+            <TextBlock Text="Where's my image?" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+            <Image x:Name="PageImage" />
+        </Grid>
+    </Grid>
+</local:BasePage>
